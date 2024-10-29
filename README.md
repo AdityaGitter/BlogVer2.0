@@ -24,31 +24,32 @@ APIs: RESTful APIs for post and comment management
 Clone the repository:
 
 bash
-Copy code
+```
 git clone https://github.com/your-username/BlogVer2.0.git
 cd BlogVer2.0
+```
 Install dependencies for both frontend and backend:
-
 bash
-Copy code
-# Backend setup
+```
+## Backend setup
 cd backend
 npm install
 
-# Frontend setup
+## Frontend setup
 cd ../frontend
 npm install
+```
 Environment Variables:
 
 Create a .env file in the root of the backend folder and add:
 plaintext
-Copy code
+```
 MONGO_URI=<your_mongo_database_uri>
 JWT_SECRET=<your_jwt_secret>
-Run the Application:
+```
 
 bash
-Copy code
+```
 # Backend
 cd backend
 npm start
@@ -56,7 +57,8 @@ npm start
 # Frontend
 cd ../frontend
 npm start
-Access the application at http://localhost:4001.
+```
+Access the application at `http://localhost:5173/`.
 
 ## Usage
 Sign Up/Login: Register or log in to start blogging.
@@ -64,8 +66,7 @@ Create Posts: Write and publish your blogs with ease.
 Comment on Posts: Engage with other users by leaving comments.
 Manage Your Profile: View and edit your profile information and posts.
 ## Project Structure
-php
-Copy code
+```
 BlogVer2.0/
 ├── backend/                # Backend source files
 │   ├── config/             # Configuration files
@@ -83,6 +84,7 @@ BlogVer2.0/
 │   │   └── App.js          # Main App component
 ├── README.md               # Project documentation
 └── .env.example            # Example environment variables
+```
 Contributing
 We welcome contributions from the community! Please feel free to submit issues and pull requests. For major changes, please discuss them in an issue first to ensure alignment with the project goals.
 
