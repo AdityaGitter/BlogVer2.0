@@ -2,24 +2,27 @@
 BlogVer2.0 is a full-stack web application designed for individuals who want to share their thoughts, experiences, and creativity through blogging. The platform allows users to create, edit, and delete posts, manage comments, and interact with other users. It provides a user-friendly interface for readers and writers alike.
 
 ## Table of Contents
-Features
-Technology Stack
-Setup and Installation
-Usage
-Project Structure
-Contributing
+1. [Features](#features)
+2. [Technology Stack](#technology-stack)
+3. [Setup and Installation](#setup-and-installation)
+4. [Usage](#usage)
+5. [Project Structure](#project-structure)
+6. [Contributing](#contributing)
+
 ## Features
 User Authentication: Users can register, log in, and manage their profiles.
 Post Management: Create, edit, and delete blog posts easily.
 Comment System: Readers can leave comments on posts, fostering interaction.
 Responsive Design: The platform is designed to work seamlessly on both desktop and mobile devices.
 User Profiles: Each user has a profile page showcasing their posts and activities.
+
 ## Technology Stack
 Frontend: React.js
 Backend: Node.js, Express.js
 Database: MongoDB
 Styling: CSS, Bootstrap
 APIs: RESTful APIs for post and comment management
+
 ## Setup and Installation
 Clone the repository:
 
@@ -65,6 +68,7 @@ Sign Up/Login: Register or log in to start blogging.
 Create Posts: Write and publish your blogs with ease.
 Comment on Posts: Engage with other users by leaving comments.
 Manage Your Profile: View and edit your profile information and posts.
+
 ## Project Structure
 ```
 BlogVer2.0/
@@ -85,6 +89,6 @@ BlogVer2.0/
 ├── README.md               # Project documentation
 └── .env.example            # Example environment variables
 ```
-Contributing
+## Contributing
 We welcome contributions from the community! Please feel free to submit issues and pull requests. For major changes, please discuss them in an issue first to ensure alignment with the project goals.
 
