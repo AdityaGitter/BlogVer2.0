@@ -58,7 +58,7 @@ npm start
 # Frontend
 cd ../frontend
 npm start
-Access the application at http://localhost:3000.
+Access the application at http://localhost:4001.
 
 Usage
 Sign Up/Login: Register or log in to create and manage blog posts.
