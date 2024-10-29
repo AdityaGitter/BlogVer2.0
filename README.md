@@ -1,4 +1,4 @@
-# BlogVer2.0
+# BlogVer2.0 - Blogging website made using MERN stack
 BlogVer2.0 is a dynamic web application designed to provide a platform for sharing thoughts, ideas, and insights on various topics. Built with a modern technology stack, this blog site aims to create an engaging and user-friendly experience for readers and contributors alike.
 
 Table of Contents
