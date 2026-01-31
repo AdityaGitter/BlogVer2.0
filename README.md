@@ -20,7 +20,7 @@ User Profiles: Each user has a profile page showcasing their posts and activitie
 Frontend: React.js
 Backend: Node.js, Express.js
 Database: MongoDB
-Styling: CSS, Bootstrap
+Styling: Tailwind CSS
 APIs: RESTful APIs for post and comment management
 
 ## Setup and Installation
@@ -47,8 +47,16 @@ Environment Variables:
 Create a .env file in the root of the backend folder and add:
 plaintext
 ```
-MONGO_URI=<your_mongo_database_uri>
-JWT_SECRET=<your_jwt_secret>
+PORT=4001
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+
+FRONTEND_URL=http://localhost:5173
+
+CLOUD_NAME=your_cloudinary_cloud_name
+CLOUD_API_KEY=your_cloudinary_api_key
+CLOUD_SECRET_KEY=your_cloudinary_api_secret
+
 ```
 
 bash
@@ -59,7 +67,7 @@ npm start
 
 # Frontend
 cd ../frontend
-npm start
+npm run dev
 ```
 Access the application at `http://localhost:5173/`.
 
@@ -71,24 +79,38 @@ Manage Your Profile: View and edit your profile information and posts.
 
 ## Project Structure
 ```
-BlogVer2.0/
-├── backend/                # Backend source files
-│   ├── config/             # Configuration files
-│   ├── controllers/        # Route logic and control functions
-│   ├── models/             # Mongoose models for MongoDB
-│   ├── routes/             # Express routes
-│   ├── utils/              # Utility functions
-│   └── server.js           # Server entry point
-├── frontend/               # Frontend source files
-│   ├── public/             # Public files (index.html, etc.)
-│   ├── src/                # React application source files
-│   │   ├── components/     # React components
-│   │   ├── pages/          # Application pages
-│   │   ├── services/       # API service functions
-│   │   └── App.js          # Main App component
-├── README.md               # Project documentation
-└── .env.example            # Example environment variables
+BLOGVER2.0/
+├── backend/
+│ ├── controller/
+│ ├── jwt/
+│ ├── middleware/
+│ ├── models/
+│ ├── routes/
+│ ├── .env
+│ ├── .env_example
+│ ├── .gitignore
+│ ├── index.js
+│ ├── package.json
+│ └── package-lock.json
+│
+├── frontend/
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── context/
+│ │ └── main.jsx
+│ ├── .gitignore
+│ ├── eslint.config.js
+│ ├── index.html
+│ ├── postcss.config.js
+│ ├── tailwind.config.js
+│ ├── vite.config.js
+│ ├── package.json
+│ └── package-lock.json
+│
+└── README.md
 ```
 ## Contributing
-We welcome contributions from the community! Please feel free to submit issues and pull requests. For major changes, please discuss them in an issue first to ensure alignment with the project goals.
+I welcome contributions from the community! Please feel free to submit issues and pull requests. For major changes, please discuss them in an issue first to ensure alignment with the project goals.
 
